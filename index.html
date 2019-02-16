@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>A Pen by  Alex</title>
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+      <title>Places Scraper</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+
+    <!-- Search form -->
+    <div class="container">
+      <div class="wrapper">
+        <div id="search-container">
+          <input id="search" type="text" placeholder="Search" value="">
+        </div>
+        <div id="map"></div>
+        <div class="controls">
+         <button onclick="createPopup(list)">Text View <img src="https://img.icons8.com/material-sharp/24/000000/external-link.png"></button>
+          <button onclick="downloadCSV(list)">Download as CSV <img src="https://img.icons8.com/material-sharp/24/000000/file.png"></button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // GOOGLE PLACES API KEY
+      // Use the Google Developer Console to set up a key: https://console.developers.google.com/
+      var google_key = "AIzaSyCCRogV1WEWmKmByaVgzIuE4EK6bGAfsXA";
+  var hunter_key = "";
+
+      (function(d, script) {
+        script = d.createElement('script');
+        script.type = 'text/javascript';
+        script.async = true;
+        script.defer = true;
+        script.onload = function() {
+          // remote script has loaded
+        };
+        script.src = 'https://maps.googleapis.com/maps/api/js?key=' + google_key + '&libraries=places&callback=initMap';
+        d.getElementsByTagName('head')[0].appendChild(script);
+      }(document));
+
+    </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
