@@ -1,5 +1,5 @@
 body {
-  background: #fafafa;
+  background: #F5F5F5;
   font-family: 'Helvetica', sans-serif;
   font-size: 18px;
 }
@@ -24,14 +24,17 @@ h2 {
   height: 60vh;
   margin-top: 10px;
   margin-bottom: 10px;
+  box-shadow: 0px 0px 11px #ccc;
 }
 
 button {
   margin-right: 10px;
   padding: 0.5%;
- border-radius: 2%;
-  background-color: #1e88e5;
- color: white;
+  border-radius: 3%;
+  background-color: #80CBC4;
+  color: white;
+  border-style: none;
+  box-shadow: 0px 0px 9px #ccc;
 }
 
 button:hover {
